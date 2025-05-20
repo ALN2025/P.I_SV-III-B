@@ -56,8 +56,12 @@ public class TelaCadastroItemVenda extends JFrame {
         painel.add(txtPrecoUnitario);
 
         JButton btnSalvar = new JButton("Salvar");
-        btnSalvar.setBounds(150, 270, 100, 30);
+        btnSalvar.setBounds(70, 270, 100, 30);
         painel.add(btnSalvar);
+
+        JButton btnAtualizar = new JButton("Atualizar Extrato");
+        btnAtualizar.setBounds(210, 270, 150, 30);
+        painel.add(btnAtualizar);
 
         // Adicionar tabela de extrato
         String[] colunas = {"Usuário", "Produto", "Quantidade", "Preço Unitário"};
@@ -66,10 +70,6 @@ public class TelaCadastroItemVenda extends JFrame {
         JScrollPane scroll = new JScrollPane(tabelaExtrato);
         scroll.setBounds(20, 20, 350, 80);
         painel.add(scroll);
-
-        JButton btnAtualizar = new JButton("Atualizar Extrato");
-        btnAtualizar.setBounds(125, 110, 150, 25);
-        painel.add(btnAtualizar);
 
         setContentPane(painel);
 
